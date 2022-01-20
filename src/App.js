@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import Card from "./components/UI/Card";
 import Button from "./components/UI/Button";
 import { useEffect, useState } from "react";
+import MovieList from "./components/MovieList/MovieList";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -17,6 +18,10 @@ function App() {
     <Fragment>
       <Card className={styles["home-card"]}>
         <Button onClick={fetchMovieHandler}>Fetch Movies</Button>
+      </Card>
+
+      <Card>
+        <MovieList movies={movies} />
       </Card>
     </Fragment>
   );
