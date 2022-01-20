@@ -1,7 +1,8 @@
+import { Fragment } from "react/cjs/react.production.min";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return <Fragment></Fragment>;
 }
 
 export default App;
